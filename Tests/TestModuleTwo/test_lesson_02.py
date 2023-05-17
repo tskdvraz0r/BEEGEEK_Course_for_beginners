@@ -1,15 +1,15 @@
 import unittest
 
-from Source.ModuleTwo.LessonTwo import hello_world
-from Source.ModuleTwo.LessonTwo import lucky_sequence_1
-from Source.ModuleTwo.LessonTwo import star_triangle
-from Source.ModuleTwo.LessonTwo import greetings
-from Source.ModuleTwo.LessonTwo import favorite_team
-from Source.ModuleTwo.LessonTwo import repeat_after_me
-from Source.ModuleTwo.LessonTwo import repeat_after_me_two
+from Source.Module_02.Lesson_02 import hello_world
+from Source.Module_02.Lesson_02 import lucky_sequence_1
+from Source.Module_02.Lesson_02 import star_triangle
+from Source.Module_02.Lesson_02 import greetings
+from Source.Module_02.Lesson_02 import favorite_team
+from Source.Module_02.Lesson_02 import repeat_after_me
+from Source.Module_02.Lesson_02 import repeat_after_me_two
 
 
-class TestLessonTwo(unittest.TestCase):
+class TestLesson02(unittest.TestCase):
     @staticmethod
     def test_hello_world() -> None:
         assert hello_world() == "Здравствуй, мир!"
