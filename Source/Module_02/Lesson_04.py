@@ -39,3 +39,24 @@ def purchase_price(elements_costs: list[int]) -> int:
     assert isinstance(elements_costs[3], int), "Значение должно быть целочисленным"
 
     return sum(elements_costs) * 3
+
+
+def arithmetic_operations(list_numbers: list[int]) -> tuple[int, int, int]:
+    assert isinstance(list_numbers[0], int), "Значение должно быть целочисленным"
+    assert isinstance(list_numbers[1], int), "Значение должно быть целочисленным"
+
+    return list_numbers[0] + list_numbers[1], list_numbers[0] - list_numbers[1], list_numbers[0] * list_numbers[1]
+
+
+def arithmetic_progression(a: int, d: int, n: int) -> int:
+    assert isinstance(a, int)
+    assert isinstance(d, int)
+    assert isinstance(n, int)
+
+    return a + d * (n - 1)
+
+
+def divide_and_conquer(number: int) -> list[int]:
+    assert isinstance(number, int)
+
+    return [number * i for i in range(1, 6)]
