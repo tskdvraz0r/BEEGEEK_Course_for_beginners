@@ -1,8 +1,10 @@
 import unittest
 
-from Source.Module_02.Lesson_03 import i_like_python
-from Source.Module_02.Lesson_03 import custom_separator
-from Source.Module_02.Lesson_03 import greetings
+from Source.Module_02.Lesson_03 import (
+    i_like_python,
+    custom_separator,
+    greetings
+)
 
 
 class TestLesson03(unittest.TestCase):

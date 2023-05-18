@@ -1,12 +1,14 @@
 import unittest
 
-from Source.Module_02.Lesson_02 import hello_world
-from Source.Module_02.Lesson_02 import lucky_sequence_1
-from Source.Module_02.Lesson_02 import star_triangle
-from Source.Module_02.Lesson_02 import greetings
-from Source.Module_02.Lesson_02 import favorite_team
-from Source.Module_02.Lesson_02 import repeat_after_me
-from Source.Module_02.Lesson_02 import repeat_after_me_two
+from Source.Module_02.Lesson_02 import (
+    hello_world,
+    lucky_sequence_1,
+    star_triangle,
+    greetings,
+    favorite_team,
+    repeat_after_me,
+    repeat_after_me_two
+)
 
 
 class TestLesson02(unittest.TestCase):
