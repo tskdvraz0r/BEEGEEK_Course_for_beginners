@@ -1,11 +1,16 @@
 import unittest
 
-from Source.Module_02.Lesson_04 import three_consecutive_numbers
-from Source.Module_02.Lesson_04 import sum_three_numbers
-from Source.Module_02.Lesson_04 import cube
-from Source.Module_02.Lesson_04 import function_value
-from Source.Module_02.Lesson_04 import next_and_previous
-from Source.Module_02.Lesson_04 import purchase_price
+from Source.Module_02.Lesson_04 import (
+    three_consecutive_numbers,
+    sum_three_numbers,
+    cube,
+    function_value,
+    next_and_previous,
+    purchase_price,
+    arithmetic_operations,
+    arithmetic_progression,
+    divide_and_conquer
+)
 
 
 class TestLesson04(unittest.TestCase):
@@ -44,6 +49,24 @@ class TestLesson04(unittest.TestCase):
         assert purchase_price([9900, 55600, 3999, 2990]) == 217467
         assert purchase_price([15700, 80550, 12050, 5890]) == 342570
         assert purchase_price([44990, 123300, 19600, 8990]) == 590640
+
+    @staticmethod
+    def test_arithmetic_operations() -> None:
+        assert arithmetic_operations([1, 2]) == (3, -1, 2)
+        assert arithmetic_operations([7, 16]) == (23, -9, 112)
+        assert arithmetic_operations([10, 10]) == (20, 0, 100)
+
+    @staticmethod
+    def test_arithmetic_progression() -> None:
+        assert arithmetic_progression(1, 1, 10) == 10
+        assert arithmetic_progression(-1, 1, 2) == 0
+        assert arithmetic_progression(100, 50, 1) == 100
+
+    @staticmethod
+    def test_divide_and_conquer() -> None:
+        assert divide_and_conquer(3) == [3, 6, 9, 12, 15]
+        assert divide_and_conquer(13) == [13, 26, 39, 52, 65]
+        assert divide_and_conquer(23) == [23, 46, 69, 92, 115]
 
 
 if __name__ == '__main__':
