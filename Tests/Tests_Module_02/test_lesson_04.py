@@ -1,16 +1,6 @@
 import unittest
 
-from Source.Module_02.Lesson_04 import (
-    three_consecutive_numbers,
-    sum_three_numbers,
-    cube,
-    function_value,
-    next_and_previous,
-    purchase_price,
-    arithmetic_operations,
-    arithmetic_progression,
-    divide_and_conquer
-)
+from Source.Module_02.Lesson_04 import *
 
 
 class TestLesson04(unittest.TestCase):

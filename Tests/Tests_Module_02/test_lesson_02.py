@@ -1,14 +1,6 @@
 import unittest
 
-from Source.Module_02.Lesson_02 import (
-    hello_world,
-    lucky_sequence_1,
-    star_triangle,
-    greetings,
-    favorite_team,
-    repeat_after_me,
-    repeat_after_me_two
-)
+from Source.Module_02.Lesson_02 import *
 
 
 class TestLesson02(unittest.TestCase):
